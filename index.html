@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBestProject</title>
+</head>
+<body style="width: 400px; height: 350px; margin: auto; margin-top: 150px; display: flex; flex-direction: column;border-radius: 8px;border: 1px solid gray; padding: 10px; gap: 15px;">
+    <p>Input <input id="input1" style="margin-left: 10px; width: 150px;"/></p>
+    <p>Input <input id="input2" style="margin-left: 10px; width: 150px;"/></p>
+    <button id="resultButton" style="width: 60px;">Result</button>
+    <p>Output: <span id="output" style="margin-left: 10px;"></span></p>
+    <script>
+        const input1 = document.getElementById('input1');
+        const input2 = document.getElementById('input2');
+        const resultButton = document.getElementById('resultButton');
+        const output = document.getElementById('output');
+        resultButton.addEventListener('click', () => {
+            const value1 = input1.value;
+            const value2 = input2.value;
+            const result = value1 + value2;
+            output.textContent = result;
+        });
+    </script>
+</body>
+</html>
